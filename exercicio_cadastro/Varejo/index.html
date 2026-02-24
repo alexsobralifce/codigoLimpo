@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Sis_Varejo</title>
+  </head>
+
+  <body bgcolor="#cccccc">
+    <center>
+      <h1>Sis</h1>
+    </center>
+
+    <form name="f1" id="f1" onsubmit="return false;">
+      <h3>Cliente</h3>
+      <label>Nome:</label> <input type="text" id="c_n"><br><br>
+      <label>Doc:</label> <input type="text" id="c_d"><br><br>
+      <button onclick="a()">CadCliente</button>
+      <hr>
+
+      <h3>Produto</h3>
+      <label>Nome:</label> <input type="text" id="p_n"><br><br>
+      <label>Valor:</label> <input type="text" id="p_v" style="background: yellow;"><br><br>
+      <button onclick="b()">CadProduto</button>
+      <hr>
+
+      <h3>Fornecedor</h3>
+      <label>Nome:</label> <input type="text" id="f_n"><br><br>
+      <button onclick="c()">CadFornecedor</button>
+    </form>
+
+    <hr>
+    <h3>Dados cadastrados:</h3>
+    <b>Clientes:</b> <span id="v1"></span><br>
+    <b>Produtos:</b> <span id="v2"></span><br>
+    <b>Fornecedores:</b> <span id="v3"></span><br>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
