@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de Cadastro Pessoal Moderno">
+    <title>Cadastro Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Cadastro</h1>
+        <form id="formCadastro" onsubmit="return fXyZ();">
+            <div class="form-group">
+                <label for="n">Nome Completo</label>
+                <input type="text" id="n" placeholder="Digite seu nome completo">
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="id">Idade</label>
+                    <input type="number" id="id" placeholder="Sua Idade">
+                </div>
+                <div class="form-group">
+                    <label for="alt">Altura (m)</label>
+                    <input type="text" id="alt" placeholder="Ex: 1.75">
+                </div>
+                <div class="form-group">
+                    <label for="pes">Peso (kg)</label>
+                    <input type="text" id="pes" placeholder="Ex: 70.5">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="end">Endereço Completo</label>
+                <input type="text" id="end" placeholder="Rua, número, complemento, bairro">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="pai">Nome do Pai</label>
+                    <input type="text" id="pai" placeholder="Nome completo do pai">
+                </div>
+                <div class="form-group">
+                    <label for="mae">Nome da Mãe</label>
+                    <input type="text" id="mae" placeholder="Nome completo da mãe">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="em">E-mail</label>
+                    <input type="text" id="em" placeholder="seu.email@exemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="tel">Telefone/Celular</label>
+                    <input type="text" id="tel" placeholder="(11) 99999-9999">
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn" id="btn_enviar">Criar Cadastro</button>
+        </form>
+    </div>
+
+    <!-- Script importado p/ validação -->
+    <script src="script.js"></script>
+</body>
+</html>
